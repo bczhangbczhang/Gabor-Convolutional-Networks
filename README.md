@@ -1,41 +1,28 @@
-#We are still partially improve the code. This is a demo for GCN on MNIST dataset using torch7
+# WACV2018: Gabor Convolutional Networks
 
-To run this demo, you should  install these dependencies:
-```
-luarocks install torchnet
-luarocks install optnet
-```
+Official PyTorch implementation of Gabor CNN. 
+But all the results in the paper are based on [Torch 7](https://github.com/bczhangbczhang/Gabor-Convolutional-Networks).
+These two implementations are sharing the same infrastructure level code.
 
-install GCN:
-```bash
-cd $DIR/GCN
-bash install.sh
-```
+## Install
 
-run this demo:
-```bash
-cd $DIR/MNIST_demo
-bash ./scripts/Train_MNIST.sh
+```
+git clone https://github.com/jxgu1016/Gabor_CNN_PyTorch
+cd Gabor_CNN_PyTorch
+sh install.sh
 ```
 
-#The experimental results of the comparison algorithm are directly quoted from the corresponding papers. 
+## Install third party tool
+```
+pip install tensorboardX
+```
 
-#Acknowledgement
-This demo is partially referenced to the code of Orientation Response Networks(ORN,`http://zhouyanzhao.github.io/ORN/`)
-If you use this demo please cite our paper and ORN. 
+## Run MNIST demo
 
-#bibtex:
+```
+cd demo
+python main.py --model gcn (--gpu 0)
+```
 
-@article{Luan2016GCN,
-  title={Gabor Convolutional Networks},
-  author={Luan, Shangzhen and Zhang, Baochang and  Chen, Chen and Cao, Xianbin and Han, Jungong and Liu, Jianzhuang},
-  year={2017},
-}
-
-@INPROCEEDINGS{Zhou2017ORN,
-  title={Oriented Response Networks},
-  author={Zhou, Yanzhao and Ye, Qixiang and Qiu, Qiang and Jiao, Jianbin},
-  booktitle = {CVPR}
-  year={2017},
-}
-
+## Please cite:
+@article{Luan2016GCN, title={Gabor Convolutional Networks}, author={Luan, Shangzhen and Zhang, Baochang and Chen, Chen and Cao, Xianbin and Han, Jungong and Liu, Jianzhuang}, year={2017}, }
