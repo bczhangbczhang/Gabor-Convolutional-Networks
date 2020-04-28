@@ -1,6 +1,7 @@
 # Gabor CNNs, Gabor Convolutional Networks
 
 We provide a demo for GCN on MNIST dataset based on **torch7** and also **PyTorch**.
+THere is a pytorch version shown in https://github.com/jxgu1016/Gabor_CNN_PyTorch
 
 To run this demo, you should  install these dependencies:
 ```
